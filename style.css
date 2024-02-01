@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .moon{
+    height: 400px;
+    width: 400px;
+    top: 10px;
+    position: relative;
+    animation: rotate 120s infinite;
+}
+
+@keyframes rotate {
+
+    100%{
+      rotate: 360deg;
+    }
+    }
+
+
+.main h1{
+    font-size: 100px;
+    color: white;
+    z-index: 10;
+    background-color: black;
+    color: white;
+}    
+
+@media (max-width:800px) {
+    .main .moon{
+    height: 400px;
+    width: 400px;
+    
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main h1{
+        position: relative;
+        bottom: 325px;
+        z-index: 10;
+        background-color: transparent;
+        
+    }
+}
